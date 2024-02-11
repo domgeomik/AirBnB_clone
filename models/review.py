@@ -1,18 +1,10 @@
 #!/usr/bin/python3
+""" Class Review """
 from models.base_model import BaseModel
-from models.place import Place
-from models.user import User
-"""
-Module class: Reviewmy
-"""
 
 
-class Reviewmy(BaseModel):
-    """definition for class Review"""
-    text = ""
+class Review(BaseModel):
+    """ Review class that inherits BaseModel """
     place_id = ""
     user_id = ""
-
-    def __init__(self, *args, **kwargs):
-        """ constructor method """
-        super().__init__(self, *args, **kwargs)
+    text = ""
